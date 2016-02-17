@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bd66768d-d783-47e4-b2d5-1c1bd57c6dde" name="Default" comment="" />
+    <ignored path="ADT.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ADT" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="order.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controllers/order.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.40809444">
+              <caret line="1378" column="0" selection-start-line="1378" selection-start-column="0" selection-end-line="1378" selection-end-column="0" />
+              <folding>
+                <element signature="n#getBeginningBalance#0;n#Order#0;n#!!top" expanded="false" />
+                <element signature="n#getExpectedActualReport#0;n#Order#0;n#!!top" expanded="false" />
+                <marker date="1452626254845" expanded="true" signature="3337:3400" placeholder="DELETE FROM " />
+                <marker date="1452626254845" expanded="true" signature="4052:4099" placeholder="DELETE FROM " />
+                <marker date="1452626254845" expanded="true" signature="4169:4251" placeholder="DELETE FROM " />
+                <marker date="1452626254845" expanded="true" signature="14024:14409" placeholder="SELECT c.id,... cdrr" />
+                <marker date="1452626254845" expanded="true" signature="14455:14822" placeholder="SELECT m.id,... maps" />
+                <marker date="1452626254845" expanded="true" signature="15075:15795" placeholder="SELECT c.per... cdrr" />
+                <marker date="1452626254845" expanded="true" signature="21151:21522" placeholder="SELECT sd.id... cdrr_item" />
+                <marker date="1452626254845" expanded="true" signature="25882:26163" placeholder="SELECT rc.id... ${$regimen_table}" />
+                <marker date="1452626254845" expanded="true" signature="28062:28214" placeholder="select * fro... ${$table}" />
+                <marker date="1452626254845" expanded="true" signature="51438:51955" placeholder="SELECT c.*,c... cdrr" />
+                <marker date="1452626254845" expanded="true" signature="52848:53417" placeholder="SELECT m.*,m... maps" />
+                <marker date="1452626254845" expanded="true" signature="54121:54638" placeholder="SELECT c.*,c... cdrr" />
+                <marker date="1452626254845" expanded="true" signature="55282:55866" placeholder="SELECT m.*,m... maps" />
+                <marker date="1452626254845" expanded="true" signature="58819:58858" placeholder="SELECT statu... ${$type}" />
+                <marker date="1452626254845" expanded="true" signature="59182:59213" placeholder="DELETE FROM " />
+                <marker date="1452626254845" expanded="true" signature="59237:59278" placeholder="DELETE FROM " />
+                <marker date="1452626254845" expanded="true" signature="59302:59342" placeholder="DELETE FROM " />
+                <marker date="1452626254845" expanded="true" signature="59464:59495" placeholder="DELETE FROM " />
+                <marker date="1452626254845" expanded="true" signature="59519:59560" placeholder="DELETE FROM " />
+                <marker date="1452626254845" expanded="true" signature="59584:59624" placeholder="DELETE FROM " />
+                <marker date="1452626254845" expanded="true" signature="76792:77044" placeholder="SELECT sd.id... sync_drug" />
+                <marker date="1452626254845" expanded="true" signature="77617:77740" placeholder="SELECT r.map... regimen" />
+                <marker date="1452626254845" expanded="true" signature="78044:78159" placeholder="SELECT sr.id... sync_regimen" />
+                <marker date="1452626254845" expanded="true" signature="78674:79460" placeholder="SELECT c.*,c... cdrr" />
+                <marker date="1452626254845" expanded="true" signature="88252:88916" placeholder="SELECT m.*,m... maps" />
+                <marker date="1452626254845" expanded="true" signature="97777:98100" placeholder="SELECT ci.dr... cdrr" />
+                <marker date="1452626254845" expanded="true" signature="98527:98850" placeholder="SELECT ci.dr... cdrr" />
+                <marker date="1452626254845" expanded="true" signature="99702:100736" placeholder="SELECT trans... id" />
+                <marker date="1452626254845" expanded="true" signature="99787:100088" placeholder="SELECT id, n... transaction_type" />
+                <marker date="1452626254845" expanded="true" signature="100118:100665" placeholder="SELECT dsm.t... drug_stock_movement" />
+                <marker date="1452626254845" expanded="true" signature="102256:103340" placeholder="SELECT dispe... SUM" />
+                <marker date="1452626254845" expanded="true" signature="102333:102830" placeholder="SELECT SUM(d... drug_stock_movement" />
+                <marker date="1452626254845" expanded="true" signature="102854:103330" placeholder="SELECT SUM(d... drug_stock_movement" />
+                <marker date="1452626254845" expanded="true" signature="103767:104816" placeholder="SELECT phy.i... drug_id" />
+                <marker date="1452626254845" expanded="true" signature="103865:104296" placeholder="SELECT dsb.d... drug_stock_balance" />
+                <marker date="1452626254845" expanded="true" signature="104325:104791" placeholder="SELECT dsb.d... drug_stock_balance" />
+                <marker date="1452626254845" expanded="true" signature="105863:106897" placeholder="SELECT trans... id" />
+                <marker date="1452626254845" expanded="true" signature="105948:106249" placeholder="SELECT id, n... transaction_type" />
+                <marker date="1452626254845" expanded="true" signature="106279:106826" placeholder="SELECT dsm.t... drug_stock_movement" />
+                <marker date="1452626254845" expanded="true" signature="108455:109092" placeholder="SELECT m.id,... maps" />
+                <marker date="1452626254845" expanded="true" signature="112183:112389" placeholder="SELECT temp.... regimen_id" />
+                <marker date="1452626254845" expanded="true" signature="112261:112348" placeholder="SELECT DISTI... maps_item" />
+                <marker date="1452626254845" expanded="true" signature="112775:112847" placeholder="SELECT m.* F... maps" />
+                <marker date="1452626254845" expanded="true" signature="115754:115865" placeholder="SELECT id as... maps_item" />
+                <marker date="1452626254845" expanded="true" signature="116368:116930" placeholder="SELECT count... patient" />
+                <marker date="1452626254845" expanded="true" signature="117256:117687" placeholder="SELECT count... regimen" />
+                <marker date="1452626254845" expanded="true" signature="118300:118760" placeholder="SELECT COUNT... v_patient_visits" />
+                <marker date="1452626254845" expanded="true" signature="118968:119406" placeholder="SELECT COUNT... patient" />
+                <marker date="1452626254845" expanded="true" signature="119649:120050" placeholder="SELECT COUNT... patient" />
+                <marker date="1452626254845" expanded="true" signature="120275:120671" placeholder="SELECT COUNT... patient" />
+                <marker date="1452626254845" expanded="true" signature="120923:121310" placeholder="SELECT COUNT... patient" />
+                <marker date="1452626254845" expanded="true" signature="121526:121858" placeholder="SELECT IF(ro... patient" />
+                <marker date="1452626254845" expanded="true" signature="122142:122541" placeholder="SELECT IF(ro... patient" />
+                <marker date="1452626254845" expanded="true" signature="122851:123228" placeholder="SELECT IF(ro... patient" />
+                <marker date="1452626254845" expanded="true" signature="123460:124091" placeholder="SELECT IF(p.... patient" />
+                <marker date="1452626254845" expanded="true" signature="124301:125079" placeholder="SELECT IF(te... patient_id" />
+                <marker date="1452626254845" expanded="true" signature="124435:124620" placeholder="SELECT DISTI... patient_visit" />
+                <marker date="1452626254845" expanded="true" signature="124674:124909" placeholder="SELECT DISTI... patient" />
+                <marker date="1452626254845" expanded="true" signature="125383:125544" placeholder="SELECT COUNT... sync_facility" />
+                <marker date="1452626254845" expanded="true" signature="125999:126314" placeholder="SELECT COUNT... ${$type}" />
+                <marker date="1452626254845" expanded="true" signature="127272:127298" placeholder="update regim... " />
+                <marker date="1452626254845" expanded="true" signature="128833:129211" placeholder="SELECT sf.na... sync_facility" />
+                <marker date="1452626254845" expanded="true" signature="130566:131215" placeholder="SELECT SUM(c... " />
+                <marker date="1452626254845" expanded="true" signature="134940:135174" placeholder="SELECT * FRO... cdrr" />
+                <marker date="1452626254845" expanded="true" signature="138302:138563" placeholder="SELECT * FRO... maps" />
+                <marker date="1452626254845" expanded="true" signature="140906:141692" placeholder="SELECT c.*,c... cdrr" />
+                <marker date="1452626254845" expanded="true" signature="147824:148488" placeholder="SELECT m.*,m... maps" />
+                <marker date="1452626254845" expanded="true" signature="157428:157824" placeholder="SELECT ci.dr... cdrr" />
+                <marker date="1452626254845" expanded="true" signature="158148:158524" placeholder="SELECT ci.dr... cdrr" />
+                <marker date="1452626254845" expanded="true" signature="159002:159490" placeholder="SELECT SUM(d... drug_stock_movement" />
+                <marker date="1452626254845" expanded="true" signature="162106:163054" placeholder="SELECT trans... id" />
+                <marker date="1452626254845" expanded="true" signature="162191:162415" placeholder="SELECT id, n... transaction_type" />
+                <marker date="1452626254845" expanded="true" signature="162460:162983" placeholder="SELECT dsm.t... drug_stock_movement" />
+                <marker date="1452626254845" expanded="true" signature="164137:164633" placeholder="SELECT SUM(d... drugcode" />
+                <marker date="1452626254845" expanded="true" signature="164887:165256" placeholder="SELECT DATED... drug_stock_movement" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/application/config/database.php" />
+        <option value="$PROJECT_DIR$/application/views/edit_order_v.php" />
+        <option value="$PROJECT_DIR$/application/models/cdrr_item.php" />
+        <option value="$PROJECT_DIR$/assets/scripts/Merged_JS.js" />
+        <option value="$PROJECT_DIR$/application/views/orders/cdrr_template.php" />
+        <option value="$PROJECT_DIR$/application/controllers/settings_management.php" />
+        <option value="$PROJECT_DIR$/application/controllers/home_controller.php" />
+        <option value="$PROJECT_DIR$/application/views/backup_v.php" />
+        <option value="$PROJECT_DIR$/application/controllers/backup.php" />
+        <option value="$PROJECT_DIR$/application/controllers/order.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1301" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd66768d-d783-47e4-b2d5-1c1bd57c6dde" name="Default" comment="" />
+      <created>1451636825839</created>
+      <option name="number" value="Default" />
+      <updated>1451636825839</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="24" width="1301" height="744" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30278885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32612056" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29721117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32612056" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/views/backup_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3956" column="42" selection-start-line="3956" selection-start-column="42" selection-end-line="3956" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/cdrr_item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/orders/cdrr_template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scripts/Merged_JS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="921" column="20" selection-start-line="921" selection-start-column="20" selection-end-line="921" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/edit_order_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="293" column="40" selection-start-line="293" selection-start-column="40" selection-end-line="293" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="233" column="15" selection-start-line="233" selection-start-column="15" selection-end-line="233" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3726" column="36" selection-start-line="3726" selection-start-column="36" selection-end-line="3726" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/cdrr_item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="95" selection-start-line="36" selection-start-column="95" selection-end-line="36" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/orders/cdrr_template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scripts/Merged_JS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="300" column="34" selection-start-line="300" selection-start-column="34" selection-end-line="300" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/edit_order_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="293" column="40" selection-start-line="293" selection-start-column="40" selection-end-line="293" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="233" column="15" selection-start-line="233" selection-start-column="15" selection-end-line="233" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/cdrr_item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="95" selection-start-line="36" selection-start-column="95" selection-end-line="36" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/nonadherence_management.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5132743">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/nascop_report_management.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5309734">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/nascop.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/viral_load.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/cache/1409987786ed02267cd3d575ee044c19024723e9cf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3580902">
+          <caret line="691" column="543" selection-start-line="691" selection-start-column="543" selection-end-line="691" selection-end-column="543" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/libraries/PHPExcel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3361824">
+          <caret line="110" column="28" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/database/Doctrine/Record.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-87.27749">
+          <caret line="322" column="5" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changelog.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18472907">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/helpers/url_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34569982">
+          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/cdrr_item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.075885326">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/orders/cdrr_template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27993256">
+          <caret line="806" column="20" selection-start-line="806" selection-start-column="20" selection-end-line="806" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scripts/Merged_JS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.024311183">
+          <caret line="921" column="20" selection-start-line="921" selection-start-column="20" selection-end-line="921" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/edit_order_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02529511">
+          <caret line="293" column="40" selection-start-line="293" selection-start-column="40" selection-end-line="293" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.024311183">
+          <caret line="233" column="15" selection-start-line="233" selection-start-column="15" selection-end-line="233" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2158516">
+          <caret line="345" column="1" selection-start-line="345" selection-start-column="1" selection-end-line="345" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/mimes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.13655287">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1748543">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47543713">
+          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/user_agents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.98584515">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/smileys.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1498751">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/auto_management.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.5531197">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding>
+            <marker date="1451636374123" expanded="true" signature="2834:2905" placeholder="UPDATE migra... " />
+            <marker date="1451636374123" expanded="true" signature="3415:3549" placeholder="SELECT batch... drug_stock_movement" />
+            <marker date="1451636374123" expanded="true" signature="3785:3868" placeholder="SELECT drug_... drug_stock_balance" />
+            <marker date="1451636374123" expanded="true" signature="4070:4168" placeholder="UPDATE drug_... " />
+            <marker date="1451636374123" expanded="true" signature="4568:4696" placeholder="SELECT batch... patient_visit" />
+            <marker date="1451636374123" expanded="true" signature="4932:5015" placeholder="SELECT drug_... drug_stock_balance" />
+            <marker date="1451636374123" expanded="true" signature="5211:5311" placeholder="UPDATE patie... " />
+            <marker date="1451636374123" expanded="true" signature="5575:5670" placeholder="UPDATE drug_... " />
+            <marker date="1451636374123" expanded="true" signature="6211:6532" placeholder="UPDATE drug_... " />
+            <marker date="1451636374123" expanded="true" signature="6926:7136" placeholder="UPDATE drug_... " />
+            <marker date="1451636374123" expanded="true" signature="7527:7658" placeholder="UPDATE drug_... " />
+            <marker date="1451636374123" expanded="true" signature="8044:8265" placeholder="SELECT p.id,... patient" />
+            <marker date="1451636374123" expanded="true" signature="8560:8672" placeholder="SELECT pv.la... patient_visit" />
+            <marker date="1451636374123" expanded="true" signature="8855:8957" placeholder="UPDATE patie... " />
+            <marker date="1451636374123" expanded="true" signature="9425:10154" placeholder="SELECT patie... patient" />
+            <marker date="1451636374123" expanded="true" signature="11675:12256" placeholder="SELECT p.pho... patient" />
+            <marker date="1451636374123" expanded="true" signature="11840:12013" placeholder="SELECT pa.id... patient_appointment" />
+            <marker date="1451636374123" expanded="true" signature="14369:14449" placeholder="update patie... " />
+            <marker date="1451636374123" expanded="true" signature="15528:15596" placeholder="SELECT id,na... patient_status" />
+            <marker date="1451636374123" expanded="true" signature="20265:20370" placeholder="UPDATE drug_... " />
+            <marker date="1451636374123" expanded="true" signature="20455:20691" placeholder="UPDATE patie... " />
+            <marker date="1451636374123" expanded="true" signature="20779:21067" placeholder="UPDATE patie... " />
+            <marker date="1451636374123" expanded="true" signature="21185:21444" placeholder="UPDATE patie... " />
+            <marker date="1451636374123" expanded="true" signature="21562:21822" placeholder="UPDATE patie... " />
+            <marker date="1451636374123" expanded="true" signature="21873:21965" placeholder="UPDATE drug_... " />
+            <marker date="1451636374123" expanded="true" signature="22110:22464" placeholder="UPDATE facil... " />
+            <marker date="1451636374123" expanded="true" signature="22545:22838" placeholder="UPDATE patie... " />
+            <marker date="1451636374123" expanded="true" signature="27788:27927" placeholder="CREATE TABLE... dependants" />
+            <marker date="1451636374123" expanded="true" signature="27960:28110" placeholder="CREATE TABLE... spouses" />
+            <marker date="1451636374123" expanded="true" signature="28152:28425" placeholder="CREATE TABLE... IF" />
+            <marker date="1451636374123" expanded="true" signature="28436:31173" placeholder="INSERT INTO `drug_instructions`... " />
+            <marker date="1451636374123" expanded="true" signature="31213:31602" placeholder="CREATE TABLE... IF" />
+            <marker date="1451636374123" expanded="true" signature="31614:32124" placeholder="INSERT INTO `sync_regimen_category`... " />
+            <marker date="1451636374123" expanded="true" signature="32174:32808" placeholder="CREATE TABLE... IF" />
+            <marker date="1451636374123" expanded="true" signature="33321:33377" placeholder="ALTER TABLE patient... " />
+            <marker date="1451636374123" expanded="true" signature="33417:33471" placeholder="ALTER TABLE patient... " />
+            <marker date="1451636374123" expanded="true" signature="33504:33550" placeholder="ALTER TABLE patient... " />
+            <marker date="1451636374123" expanded="true" signature="33579:33649" placeholder="ALTER TABLE `spouses`... " />
+            <marker date="1451636374123" expanded="true" signature="33681:33754" placeholder="ALTER TABLE `dependants`... " />
+            <marker date="1451636374123" expanded="true" signature="33796:33895" placeholder="ALTER TABLE drug_stock_movement" />
+            <marker date="1451636374123" expanded="true" signature="36834:37218" placeholder="SELECT sf.na... sync_facility" />
+            <marker date="1451636374123" expanded="true" signature="37841:38163" placeholder="SELECT DISTI... users" />
+            <marker date="1451636374123" expanded="true" signature="42141:42201" placeholder="ALTER TABLE ${$value['table']}" />
+            <marker date="1451636374123" expanded="true" signature="42221:42287" placeholder="ALTER TABLE ${$value['table']}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/settings_management.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4397163">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/access_level.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4806071">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/cdrr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/district.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin_management.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="41.25">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1451636374039" expanded="true" signature="9317:9451" placeholder="SELECT DISTI... access_log" />
+            <marker date="1451636374039" expanded="true" signature="10823:11007" placeholder="select ur.id... user_right" />
+            <marker date="1451636374039" expanded="true" signature="13249:13313" placeholder="select * fro... access_log" />
+            <marker date="1451636374039" expanded="true" signature="14774:14838" placeholder="select * fro... denied_log" />
+            <marker date="1451636374039" expanded="true" signature="16095:16176" placeholder="update facil... " />
+            <marker date="1451636374039" expanded="true" signature="20391:20569" placeholder="..." />
+            <marker date="1451636374039" expanded="true" signature="21029:21139" placeholder="select count... users" />
+            <marker date="1451636374039" expanded="true" signature="21508:21591" placeholder="update acces... " />
+            <marker date="1451636374039" expanded="true" signature="21643:21760" placeholder="SELECT COUNT... access_log" />
+            <marker date="1451636374039" expanded="true" signature="22086:22129" placeholder="update ${$ta... " />
+            <marker date="1451636374039" expanded="true" signature="22154:22197" placeholder="update ${$ta... " />
+            <marker date="1451636374039" expanded="true" signature="22493:22536" placeholder="update ${$ta... " />
+            <marker date="1451636374039" expanded="true" signature="22561:22604" placeholder="update ${$ta... " />
+            <marker date="1451636374039" expanded="true" signature="22870:22936" placeholder="update facil... " />
+            <marker date="1451636374039" expanded="true" signature="27064:27106" placeholder="select * fro... access_level" />
+            <marker date="1451636374039" expanded="true" signature="27315:27529" placeholder="SELECT acl.i... access_log" />
+            <marker date="1451636374039" expanded="true" signature="29563:29679" placeholder="SELECT count... access_log" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/core/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39291736">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7065767">
+          <caret line="345" column="22" selection-start-line="345" selection-start-column="22" selection-end-line="345" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/home_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33052278">
+          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
+          <folding>
+            <marker date="1452618165885" expanded="true" signature="3865:3993" placeholder="SELECT COUNT... patient_appointment" />
+            <marker date="1452618165885" expanded="true" signature="4037:4187" placeholder="SELECT COUNT... patient_visit" />
+            <marker date="1452618165885" expanded="true" signature="4714:4789" placeholder="SELECT modul... faq" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/backup_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22765599">
+          <caret line="9" column="101" selection-start-line="9" selection-start-column="101" selection-end-line="9" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/backup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.4671164">
+          <caret line="121" column="17" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
+          <folding>
+            <element signature="e#105#188#0#PHP" expanded="false" />
+            <marker date="1452625501413" expanded="true" signature="3255:3300" placeholder="SELECT * FRO... backup" />
+            <marker date="1452625501413" expanded="true" signature="4345:4390" placeholder="SELECT * FRO... backup" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/backup_management.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62057334">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/home_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3035413">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/dashboard_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40809444">
+          <caret line="1378" column="0" selection-start-line="1378" selection-start-column="0" selection-end-line="1378" selection-end-column="0" />
+          <folding>
+            <element signature="n#getBeginningBalance#0;n#Order#0;n#!!top" expanded="false" />
+            <element signature="n#getExpectedActualReport#0;n#Order#0;n#!!top" expanded="false" />
+            <marker date="1452626254845" expanded="true" signature="3337:3400" placeholder="DELETE FROM " />
+            <marker date="1452626254845" expanded="true" signature="4052:4099" placeholder="DELETE FROM " />
+            <marker date="1452626254845" expanded="true" signature="4169:4251" placeholder="DELETE FROM " />
+            <marker date="1452626254845" expanded="true" signature="14024:14409" placeholder="SELECT c.id,... cdrr" />
+            <marker date="1452626254845" expanded="true" signature="14455:14822" placeholder="SELECT m.id,... maps" />
+            <marker date="1452626254845" expanded="true" signature="15075:15795" placeholder="SELECT c.per... cdrr" />
+            <marker date="1452626254845" expanded="true" signature="21151:21522" placeholder="SELECT sd.id... cdrr_item" />
+            <marker date="1452626254845" expanded="true" signature="25882:26163" placeholder="SELECT rc.id... ${$regimen_table}" />
+            <marker date="1452626254845" expanded="true" signature="28062:28214" placeholder="select * fro... ${$table}" />
+            <marker date="1452626254845" expanded="true" signature="51438:51955" placeholder="SELECT c.*,c... cdrr" />
+            <marker date="1452626254845" expanded="true" signature="52848:53417" placeholder="SELECT m.*,m... maps" />
+            <marker date="1452626254845" expanded="true" signature="54121:54638" placeholder="SELECT c.*,c... cdrr" />
+            <marker date="1452626254845" expanded="true" signature="55282:55866" placeholder="SELECT m.*,m... maps" />
+            <marker date="1452626254845" expanded="true" signature="58819:58858" placeholder="SELECT statu... ${$type}" />
+            <marker date="1452626254845" expanded="true" signature="59182:59213" placeholder="DELETE FROM " />
+            <marker date="1452626254845" expanded="true" signature="59237:59278" placeholder="DELETE FROM " />
+            <marker date="1452626254845" expanded="true" signature="59302:59342" placeholder="DELETE FROM " />
+            <marker date="1452626254845" expanded="true" signature="59464:59495" placeholder="DELETE FROM " />
+            <marker date="1452626254845" expanded="true" signature="59519:59560" placeholder="DELETE FROM " />
+            <marker date="1452626254845" expanded="true" signature="59584:59624" placeholder="DELETE FROM " />
+            <marker date="1452626254845" expanded="true" signature="76792:77044" placeholder="SELECT sd.id... sync_drug" />
+            <marker date="1452626254845" expanded="true" signature="77617:77740" placeholder="SELECT r.map... regimen" />
+            <marker date="1452626254845" expanded="true" signature="78044:78159" placeholder="SELECT sr.id... sync_regimen" />
+            <marker date="1452626254845" expanded="true" signature="78674:79460" placeholder="SELECT c.*,c... cdrr" />
+            <marker date="1452626254845" expanded="true" signature="88252:88916" placeholder="SELECT m.*,m... maps" />
+            <marker date="1452626254845" expanded="true" signature="97777:98100" placeholder="SELECT ci.dr... cdrr" />
+            <marker date="1452626254845" expanded="true" signature="98527:98850" placeholder="SELECT ci.dr... cdrr" />
+            <marker date="1452626254845" expanded="true" signature="99702:100736" placeholder="SELECT trans... id" />
+            <marker date="1452626254845" expanded="true" signature="99787:100088" placeholder="SELECT id, n... transaction_type" />
+            <marker date="1452626254845" expanded="true" signature="100118:100665" placeholder="SELECT dsm.t... drug_stock_movement" />
+            <marker date="1452626254845" expanded="true" signature="102256:103340" placeholder="SELECT dispe... SUM" />
+            <marker date="1452626254845" expanded="true" signature="102333:102830" placeholder="SELECT SUM(d... drug_stock_movement" />
+            <marker date="1452626254845" expanded="true" signature="102854:103330" placeholder="SELECT SUM(d... drug_stock_movement" />
+            <marker date="1452626254845" expanded="true" signature="103767:104816" placeholder="SELECT phy.i... drug_id" />
+            <marker date="1452626254845" expanded="true" signature="103865:104296" placeholder="SELECT dsb.d... drug_stock_balance" />
+            <marker date="1452626254845" expanded="true" signature="104325:104791" placeholder="SELECT dsb.d... drug_stock_balance" />
+            <marker date="1452626254845" expanded="true" signature="105863:106897" placeholder="SELECT trans... id" />
+            <marker date="1452626254845" expanded="true" signature="105948:106249" placeholder="SELECT id, n... transaction_type" />
+            <marker date="1452626254845" expanded="true" signature="106279:106826" placeholder="SELECT dsm.t... drug_stock_movement" />
+            <marker date="1452626254845" expanded="true" signature="108455:109092" placeholder="SELECT m.id,... maps" />
+            <marker date="1452626254845" expanded="true" signature="112183:112389" placeholder="SELECT temp.... regimen_id" />
+            <marker date="1452626254845" expanded="true" signature="112261:112348" placeholder="SELECT DISTI... maps_item" />
+            <marker date="1452626254845" expanded="true" signature="112775:112847" placeholder="SELECT m.* F... maps" />
+            <marker date="1452626254845" expanded="true" signature="115754:115865" placeholder="SELECT id as... maps_item" />
+            <marker date="1452626254845" expanded="true" signature="116368:116930" placeholder="SELECT count... patient" />
+            <marker date="1452626254845" expanded="true" signature="117256:117687" placeholder="SELECT count... regimen" />
+            <marker date="1452626254845" expanded="true" signature="118300:118760" placeholder="SELECT COUNT... v_patient_visits" />
+            <marker date="1452626254845" expanded="true" signature="118968:119406" placeholder="SELECT COUNT... patient" />
+            <marker date="1452626254845" expanded="true" signature="119649:120050" placeholder="SELECT COUNT... patient" />
+            <marker date="1452626254845" expanded="true" signature="120275:120671" placeholder="SELECT COUNT... patient" />
+            <marker date="1452626254845" expanded="true" signature="120923:121310" placeholder="SELECT COUNT... patient" />
+            <marker date="1452626254845" expanded="true" signature="121526:121858" placeholder="SELECT IF(ro... patient" />
+            <marker date="1452626254845" expanded="true" signature="122142:122541" placeholder="SELECT IF(ro... patient" />
+            <marker date="1452626254845" expanded="true" signature="122851:123228" placeholder="SELECT IF(ro... patient" />
+            <marker date="1452626254845" expanded="true" signature="123460:124091" placeholder="SELECT IF(p.... patient" />
+            <marker date="1452626254845" expanded="true" signature="124301:125079" placeholder="SELECT IF(te... patient_id" />
+            <marker date="1452626254845" expanded="true" signature="124435:124620" placeholder="SELECT DISTI... patient_visit" />
+            <marker date="1452626254845" expanded="true" signature="124674:124909" placeholder="SELECT DISTI... patient" />
+            <marker date="1452626254845" expanded="true" signature="125383:125544" placeholder="SELECT COUNT... sync_facility" />
+            <marker date="1452626254845" expanded="true" signature="125999:126314" placeholder="SELECT COUNT... ${$type}" />
+            <marker date="1452626254845" expanded="true" signature="127272:127298" placeholder="update regim... " />
+            <marker date="1452626254845" expanded="true" signature="128833:129211" placeholder="SELECT sf.na... sync_facility" />
+            <marker date="1452626254845" expanded="true" signature="130566:131215" placeholder="SELECT SUM(c... " />
+            <marker date="1452626254845" expanded="true" signature="134940:135174" placeholder="SELECT * FRO... cdrr" />
+            <marker date="1452626254845" expanded="true" signature="138302:138563" placeholder="SELECT * FRO... maps" />
+            <marker date="1452626254845" expanded="true" signature="140906:141692" placeholder="SELECT c.*,c... cdrr" />
+            <marker date="1452626254845" expanded="true" signature="147824:148488" placeholder="SELECT m.*,m... maps" />
+            <marker date="1452626254845" expanded="true" signature="157428:157824" placeholder="SELECT ci.dr... cdrr" />
+            <marker date="1452626254845" expanded="true" signature="158148:158524" placeholder="SELECT ci.dr... cdrr" />
+            <marker date="1452626254845" expanded="true" signature="159002:159490" placeholder="SELECT SUM(d... drug_stock_movement" />
+            <marker date="1452626254845" expanded="true" signature="162106:163054" placeholder="SELECT trans... id" />
+            <marker date="1452626254845" expanded="true" signature="162191:162415" placeholder="SELECT id, n... transaction_type" />
+            <marker date="1452626254845" expanded="true" signature="162460:162983" placeholder="SELECT dsm.t... drug_stock_movement" />
+            <marker date="1452626254845" expanded="true" signature="164137:164633" placeholder="SELECT SUM(d... drugcode" />
+            <marker date="1452626254845" expanded="true" signature="164887:165256" placeholder="SELECT DATED... drug_stock_movement" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
