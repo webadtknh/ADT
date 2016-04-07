@@ -1107,6 +1107,26 @@
         {
             "date_tested": "0",
             "result": "0"
+        },
+        {
+            "date_tested": "0",
+            "result": "0"
+        },
+        {
+            "date_tested": "0",
+            "result": "0"
+        },
+        {
+            "date_tested": "0",
+            "result": "0"
+        },
+        {
+            "date_tested": "0",
+            "result": "0"
+        },
+        {
+            "date_tested": "0",
+            "result": "0"
         }
     ],
     "": [
@@ -1647,13 +1667,17 @@
         {
             "date_tested": "1",
             "result": "1"
+        },
+        {
+            "date_tested": "1",
+            "result": "1"
+        },
+        {
+            "date_tested": "1",
+            "result": "1"
         }
     ],
     "7": [
-        {
-            "date_tested": "7",
-            "result": "7"
-        },
         {
             "date_tested": "7",
             "result": "7"
@@ -2147,41 +2171,7 @@
             "result": "A"
         }
     ],
-    "2": [
-        {
-            "date_tested": "2",
-            "result": "2"
-        },
-        {
-            "date_tested": "2",
-            "result": "2"
-        },
-        {
-            "date_tested": "2",
-            "result": "2"
-        },
-        {
-            "date_tested": "2",
-            "result": "2"
-        },
-        {
-            "date_tested": "2",
-            "result": "2"
-        },
-        {
-            "date_tested": "2",
-            "result": "2"
-        },
-        {
-            "date_tested": "2",
-            "result": "2"
-        }
-    ],
     "3": [
-        {
-            "date_tested": "3",
-            "result": "3"
-        },
         {
             "date_tested": "3",
             "result": "3"
@@ -2255,6 +2245,28 @@
             "result": "I"
         }
     ],
+    "2": [
+        {
+            "date_tested": "2",
+            "result": "2"
+        },
+        {
+            "date_tested": "2",
+            "result": "2"
+        },
+        {
+            "date_tested": "2",
+            "result": "2"
+        },
+        {
+            "date_tested": "2",
+            "result": "2"
+        },
+        {
+            "date_tested": "2",
+            "result": "2"
+        }
+    ],
     "M": [
         {
             "date_tested": "M",
@@ -2307,17 +2319,13 @@
         {
             "date_tested": "4",
             "result": "4"
-        },
-        {
-            "date_tested": "4",
-            "result": "4"
-        },
-        {
-            "date_tested": "4",
-            "result": "4"
         }
     ],
     "C": [
+        {
+            "date_tested": "C",
+            "result": "C"
+        },
         {
             "date_tested": "C",
             "result": "C"
@@ -2357,17 +2365,9 @@
         {
             "date_tested": "8",
             "result": "8"
-        },
-        {
-            "date_tested": "8",
-            "result": "8"
         }
     ],
     "L": [
-        {
-            "date_tested": "L",
-            "result": "L"
-        },
         {
             "date_tested": "L",
             "result": "L"
