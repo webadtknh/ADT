@@ -1057,7 +1057,7 @@ class report_management extends MY_Controller {
 				AND ps.Name LIKE '%active%'
 				GROUP BY p.patient_number_ccc";
 		$query = $this -> db -> query($sql);
-		$results = $query -A> result_array();
+		$results = $query -> result_array();
 		if ($results) {
 			foreach ($results as $result) {
 				if (strtolower($result['gender']) == "female") {
@@ -2227,8 +2227,6 @@ class report_management extends MY_Controller {
 						<th> Last Regimen </th>
 						<th> Appointment Date </th>
 						<th> Visit Status</th>
-						<th> Source</th>
-
 					</tr>
 				</thead>
 				<tbody>";
@@ -2260,7 +2258,7 @@ class report_management extends MY_Controller {
 						$status = "<span style='color:red;'>Not Visited</span>";
 					}
 				}
-				$sql = "select patient_number_ccc as art_no,UPPER(first_name)as first_name,pss.name as source,UPPER(other_name)as other_name,UPPER(last_name)as last_name, IF(gender=1,'Male','Female')as gender,UPPER(physical) as physical,phone,alternate,FLOOR(DATEDIFF('$today',dob)/365) as age,r.regimen_desc as last_regimen from patient LEFT JOIN patient_source pss on pss.id=patient.source,regimen r where patient_number_ccc='$patient' and current_regimen=r.id and facility_code='$facility_code'";
+				$sql = "select patient_number_ccc as art_no,UPPER(first_name)as first_name,UPPER(other_name)as other_name,UPPER(last_name)as last_name, IF(gender=1,'Male','Female')as gender,UPPER(physical) as physical,phone,alternate,FLOOR(DATEDIFF('$today',dob)/365) as age,r.regimen_desc as last_regimen from patient,regimen r where patient_number_ccc='$patient' and current_regimen=r.id and facility_code='$facility_code'";
 				$query = $this -> db -> query($sql);
 				$results = $query -> result_array();
 				if ($results) {
@@ -2278,9 +2276,8 @@ class report_management extends MY_Controller {
 						$age = $result['age'];
 						$last_regimen = $result['last_regimen'];
 						$appointment = date('d-M-Y', strtotime($appointment));
-						$source=$result['source'];
 					}
-					$row_string .= "<tr><td>$patient_id</td><td width='300' style='text-align:left;'>$first_name $other_name $last_name</td><td>$phone</td><td>$address</td><td>$gender</td><td>$age</td><td style='white-space:nowrap;'>$last_regimen</td><td>$appointment</td><td width='200px'>$status</td><td>$source</td></tr>";
+					$row_string .= "<tr><td>$patient_id</td><td width='300' style='text-align:left;'>$first_name $other_name $last_name</td><td>$phone</td><td>$address</td><td>$gender</td><td>$age</td><td style='white-space:nowrap;'>$last_regimen</td><td>$appointment</td><td width='200px'>$status</td></tr>";
 					$overall_total++;
 				}
 			}
@@ -2339,7 +2336,6 @@ class report_management extends MY_Controller {
 					<th> Contacts/Address </th>
 					<th> Appointment Date </th>
 					<th> Late by (days)</th>
-					<th> Source</th>
 				</tr>
 			</thead>";
 		if ($results) {
@@ -2359,14 +2355,12 @@ class report_management extends MY_Controller {
 					               UPPER(first_name)as first_name,
 					               UPPER(other_name)as other_name,
 					               UPPER(last_name)as last_name,
-					               pss.name as source,
                                                        FLOOR(DATEDIFF('$today',dob)/365) as age,
 					               IF(gender=1,'Male','Female')as gender,
 					               UPPER(physical) as physical,
 					               DATEDIFF('$today',nextappointment) as days_late, 
                                                        rst.name AS service_type
 					        FROM patient 
-					       		   LEFT JOIN patient_source pss on pss.id=patient.source
 	                               LEFT JOIN regimen_service_type rst 
 	                               ON rst.id=patient.service
 					        WHERE patient_number_ccc='$patient' 
@@ -2385,8 +2379,7 @@ class report_management extends MY_Controller {
 							$address = $result['physical'];
 							$appointment = date('d-M-Y', strtotime($appointment));
 							$days_late_by = $result['days_late'];
-							$source=$result['source'];
-							$row_string .= "<tr><td>$patient_no</td><td>$patient_name</td><td>$service_type</td><td>$gender</td><td>$age</td><td>$address</td><td>$appointment</td><td>$days_late_by</td><td>$source</td></tr>";
+							$row_string .= "<tr><td>$patient_no</td><td>$patient_name</td><td>$service_type</td><td>$gender</td><td>$age</td><td>$address</td><td>$appointment</td><td>$days_late_by</td></tr>";
 						}
 					}
 					$overall_total++;
@@ -2422,9 +2415,8 @@ class report_management extends MY_Controller {
 		$from = date('Y-m-d', strtotime($from));
 		$to = date('Y-m-d', strtotime($to));
 
-		$sql = "SELECT p.patient_number_ccc as art_no,UPPER(p.first_name) as first_name,pss.name as source, UPPER(p.last_name) as last_name,UPPER(p.other_name)as other_name,FLOOR(DATEDIFF('$today',p.dob)/365) as age, p.dob, IF(p.gender=1,'Male','Female') as gender, p.weight, r.regimen_desc,r.regimen_code,p.start_regimen_date, t.name AS service_type, s.name AS supported_by 
+		$sql = "SELECT p.patient_number_ccc as art_no,UPPER(p.first_name) as first_name,UPPER(p.last_name) as last_name,UPPER(p.other_name)as other_name,FLOOR(DATEDIFF('$today',p.dob)/365) as age, p.dob, IF(p.gender=1,'Male','Female') as gender, p.weight, r.regimen_desc,r.regimen_code,p.start_regimen_date, t.name AS service_type, s.name AS supported_by 
 				from patient p 
-				LEFT JOIN patient_source pss on pss.id=p.source
 				LEFT JOIN regimen r ON p.start_regimen =r.id
 				LEFT JOIN regimen_service_type t ON t.id = p.service
 				LEFT JOIN supporter s ON s.id = p.supported_by
@@ -2445,7 +2437,6 @@ class report_management extends MY_Controller {
 					<th> Start Regimen Date </th>
 					<th> Regimen </th>
 					<th> Current Weight (Kg)</th>
-					<th> Source</th>
 				</tr>
 				</thead>
 				<tbody>";
@@ -2460,8 +2451,7 @@ class report_management extends MY_Controller {
 				$start_regimen_date = date('d-M-Y', strtotime($result['start_regimen_date']));
 				$regimen_desc = "<b>" . $result['regimen_code'] . "</b>|" . $result['regimen_desc'];
 				$weight = number_format($result['weight'], 2);
-				$source = $result['source'];
-				$row_string .= "<tr><td>$patient_no</td><td>$service_type</td><td>$supported_by</td><td>$patient_name</td><td>$gender</td><td>$age</td><td>$start_regimen_date</td><td>$regimen_desc</td><td>$weight</td><td>$source</td></tr>";
+				$row_string .= "<tr><td>$patient_no</td><td>$service_type</td><td>$supported_by</td><td>$patient_name</td><td>$gender</td><td>$age</td><td>$start_regimen_date</td><td>$regimen_desc</td><td>$weight</td></tr>";
 				$overall_total++;
 			}
 
@@ -2484,233 +2474,6 @@ class report_management extends MY_Controller {
 		$this -> load -> view('template', $data);
 
 	}
-//************************************************************added patients on isoniazid*****************************************************************8
-	  public function getisoniazidPatients($from = "", $to = "") {
-		//Variables
-		
-		$row_string = "";
-		$status = "";
-		$overall_total = 0;
-		$today = date('Y-m-d');
-		$late_by = "";
-		$facility_code = $this -> session -> userdata("facility");
-		$from = date('Y-m-d', strtotime($from));
-		$to = date('Y-m-d', strtotime($to));
-
-		//Get all patients who have apppointments on the selected date range
-		
-		//Routine Isoniazid
-		//male adult
-		$sql1 = "SELECT * FROM patient WHERE (isoniazid_end_date > '$to') AND gender=1 AND FLOOR(DATEDIFF('$from',dob)/365)>15 ";
-		
-		$query1 = $this -> db -> query($sql1);
-		$result = $query1 ->num_rows();
-		//$count=$result['COUNT(*)'];
-		//female adult
-		$sql2 = "SELECT * FROM patient WHERE (isoniazid_end_date > '$to') AND gender=2 AND FLOOR(DATEDIFF('$from',dob)/365)>15";
-		
-		$query2 = $this -> db -> query($sql2);
-		$result1 = $query2 -> num_rows();
-		//male child
-		$sql3 = "SELECT * FROM patient WHERE (isoniazid_end_date > '$to') AND gender=1 AND FLOOR(DATEDIFF('$from',dob)/365)<15 ";
-		
-		$query3 = $this -> db -> query($sql3);
-		$result3 = $query3 -> num_rows();
-		//female adult
-		$sql4 = "SELECT * FROM patient WHERE (isoniazid_end_date > '$to') AND gender=2 AND FLOOR(DATEDIFF('$from',dob)/365)<15 ";
-		
-		$query4 = $this -> db -> query($sql4);
-		$result4 = $query4 -> num_rows();
-
-		//started on isoniazid
-		//male adult
-		$sql5 = "SELECT * FROM patient WHERE (isoniazid_start_date > '$from') AND gender=1 AND FLOOR(DATEDIFF('$from',dob)/365)>15 ";
-		
-		$query5 = $this -> db -> query($sql5);
-		$result5 = $query5 ->num_rows();
-		//$count=$result['COUNT(*)'];
-		//female adult
-		$sql6 = "SELECT * FROM patient WHERE (isoniazid_start_date > '$from') AND gender=2 AND FLOOR(DATEDIFF('$from',dob)/365)>15";
-		
-		$query6 = $this -> db -> query($sql6);
-		$result6= $query6 -> num_rows();
-//male child
-		$sql7 = "SELECT * FROM patient WHERE (isoniazid_start_date > '$from') AND gender=1 AND FLOOR(DATEDIFF('$from',dob)/365)<15 ";
-		
-		$query7 = $this -> db -> query($sql7);
-		$result7 = $query7 -> num_rows();
-		//female adult
-		$sql8 = "SELECT * FROM patient WHERE (isoniazid_start_date > '$from') AND gender=2 AND FLOOR(DATEDIFF('$from',dob)/365)<15";
-		
-		$query8 = $this -> db -> query($sql8);
-		$result8 = $query8 -> num_rows();
-
-		//completed on isoniazid
-		//male adult
-		$sql9 = "SELECT * FROM patient WHERE (isoniazid_end_date > '$from') AND (isoniazid_end_date < '$to') AND gender=1 AND FLOOR(DATEDIFF('$from',dob)/365)>15 ";
-		
-		$query9 = $this -> db -> query($sql9);
-		$result9 = $query9 ->num_rows();
-		//$count=$result['COUNT(*)'];
-		//female adult
-		$sql10 = "SELECT * FROM patient WHERE (isoniazid_end_date > '$from') AND (isoniazid_end_date < '$to') AND gender=2 AND FLOOR(DATEDIFF('$from',dob)/365)>15";
-		
-		$query10 = $this -> db -> query($sql10);
-		$result10= $query10 -> num_rows();
-		//male child
-		$sql11 = "SELECT * FROM patient WHERE (isoniazid_end_date > '$from') AND (isoniazid_end_date < '$to') AND gender=1 AND FLOOR(DATEDIFF('$from',dob)/365)<15 ";
-		
-		$query11 = $this -> db -> query($sql11);
-		$result11 = $query11 -> num_rows();
-		//female adult
-		$sql12 = "SELECT * FROM patient WHERE (isoniazid_end_date > '$from') AND (isoniazid_end_date < '$to') AND gender=2 AND FLOOR(DATEDIFF('$from',dob)/365)<15";
-		
-		$query12 = $this -> db -> query($sql12);
-		$result12 = $query12 -> num_rows();
-		
-		//cotrimoxazole
-		//male adult
-		$sql13 = "SELECT * FROM patient WHERE drug_prophylaxis=1 AND gender=1 AND FLOOR(DATEDIFF('$from',dob)/365)>15 ";
-		
-		$query13 = $this -> db -> query($sql13);
-		$result13 = $query13 ->num_rows();
-		//$count=$result['COUNT(*)'];
-		//female adult
-		$sql14 = "SELECT * FROM patient WHERE drug_prophylaxis=1 AND gender=2 AND FLOOR(DATEDIFF('$from',dob)/365)>15";
-		
-		$query14 = $this -> db -> query($sql14);
-		$result14= $query14 -> num_rows();
-		//male child
-		$sql15 = "SELECT * FROM patient WHERE drug_prophylaxis=1 AND gender=1 AND FLOOR(DATEDIFF('$from',dob)/365)<15 ";
-		
-		$query15 = $this -> db -> query($sql15);
-		$result15 = $query15 -> num_rows();
-		//female adult
-		$sql16 = "SELECT * FROM patient WHERE drug_prophylaxis=1 AND gender=2 AND FLOOR(DATEDIFF('$from',dob)/365)<15";
-		
-		$query16 = $this -> db -> query($sql16);
-		$result16 = $query16 -> num_rows();
-		
-		//dapsone
-		//male adult
-		$sql17 = "SELECT * FROM patient WHERE drug_prophylaxis=2 AND gender=1 AND FLOOR(DATEDIFF('$from',dob)/365)>15 ";
-		
-		$query17 = $this -> db -> query($sql17);
-		$result17 = $query17 ->num_rows();
-		//$count=$result['COUNT(*)'];
-		//female adult
-		$sql18 = "SELECT * FROM patient WHERE drug_prophylaxis=2 AND gender=2 AND FLOOR(DATEDIFF('$from',dob)/365)>15";
-		
-		$query18 = $this -> db -> query($sql18);
-		$result18= $query18 -> num_rows();
-		//male child
-		$sql19 = "SELECT * FROM patient WHERE drug_prophylaxis=2 AND gender=1 AND FLOOR(DATEDIFF('$from',dob)/365)<15 ";
-		
-		$query19 = $this -> db -> query($sql19);
-		$result19 = $query19 -> num_rows();
-		//female adult
-		$sql20 = "SELECT * FROM patient WHERE drug_prophylaxis=2 AND gender=2 AND FLOOR(DATEDIFF('$from',dob)/365)<15";
-		
-		$query20 = $this -> db -> query($sql20);
-		$result20 = $query20 -> num_rows();
-		
-		//Fluconazole
-		//male adult
-		$sql21 = "SELECT * FROM patient WHERE drug_prophylaxis=4 AND gender=1 AND FLOOR(DATEDIFF('$from',dob)/365)>15 ";
-		
-		$query21 = $this -> db -> query($sql21);
-		$result21 = $query21->num_rows();
-		//$count=$result['COUNT(*)'];
-		//female adult
-		$sql22 = "SELECT * FROM patient WHERE drug_prophylaxis=4 AND gender=2 AND FLOOR(DATEDIFF('$from',dob)/365)>15";
-		
-		$query22 = $this -> db -> query($sql22);
-		$result22= $query22 -> num_rows();
-		//male child
-		$sql23 = "SELECT * FROM patient WHERE drug_prophylaxis=4 AND gender=1 AND FLOOR(DATEDIFF('$from',dob)/365)<15 ";
-		
-		$query23 = $this -> db -> query($sql23);
-		$result23 = $query23 -> num_rows();
-		//female adult
-		$sql24 = "SELECT * FROM patient WHERE drug_prophylaxis=4 AND gender=2 AND FLOOR(DATEDIFF('$from',dob)/365)<15";
-		
-		$query24 = $this -> db -> query($sql24);
-		$result24 = $query24 -> num_rows();
-
-				$row_string = "
-			<table border='1' class='dataTables'>
-				<thead >
-					<tr>
-						<th> </th>
-						<th> Male Adults </th>
-						<th> Female Adults</th>
-						<th> Male Children </th>
-						<th> Female Children</th>
-						
-						
-
-					</tr></thead><tbody>
-					<tr>
-			<td>No of patients on Routine isoniazid </td>
-			<td>".$result."</td>
-			<td>".$result1."</td>
-			<td>".$result3 ."</td>
-			<td>".$result4."</td>
-			</tr>
-			<tr>
-			<td>No of patients started on  isoniazid </td>
-		<td>".$result5."</td>
-			<td>".$result6."</td>
-			<td>".$result7 ."</td>
-			<td>".$result8."</td>
-			</tr>
-			<tr>
-			<td>No of patients completed  isoniazid </td>
-		<td>".$result9."</td>
-			<td>".$result10."</td>
-			<td>".$result11 ."</td>
-			<td>".$result12."</td>
-		</tr>
-		<tr>
-			<td>No of patients on Cotrimoxazole</td>
-		<td>".$result13."</td>
-			<td>".$result14."</td>
-			<td>".$result15 ."</td>
-			<td>".$result16."</td>
-		</tr>
-		<tr>
-			<td>No of patients on Dapsone</td>
-		<td>".$result17."</td>
-			<td>".$result18."</td>
-			<td>".$result19 ."</td>
-			<td>".$result20."</td>
-		</tr>
-		<tr>
-			<td>No of patients on Fluconazole</td>
-		<td>".$result21."</td>
-			<td>".$result22."</td>
-			<td>".$result23 ."</td>
-			<td>".$result24."</td>
-		</tr>
-		";
-	
-
-		$row_string .= "</tbody></table>";
-		$data['from'] = date('d-M-Y', strtotime($from));
-		$data['to'] = date('d-M-Y', strtotime($to));
-		$data['dyn_table'] = $row_string;
-		$data['visited_later'] = $visited_later;
-		
-		$data['title'] = "webADT | Reports";
-		$data['hide_side_menu'] = 1;
-		$data['banner_text'] = "Facility Reports";
-		//$data['selected_report_type_link'] = "visiting_patient_report_row";
-		//$data['selected_report_type'] = "Visiting Patients";
-		$data['report_title'] = "List of Patients on isoniazid";
-		$data['facility_name'] = $this -> session -> userdata('facility_name');
-		$data['content_view'] = 'reports/patients_on_isoniazid_v';
-		$this -> load -> view('template', $data);
-	}
 
 	public function getPatientsforRefill($from = "", $to = "") {
 		//Variables
@@ -2729,7 +2492,6 @@ class report_management extends MY_Controller {
 				UPPER(p.first_name) as first_name ,
 				UPPER(p.other_name) as other_name ,
 				UPPER(p.last_name)as last_name,
-				pss.name as source,
 				FLOOR(DATEDIFF('$today',p.dob)/365) as age,
 				pv.current_weight as weight, 
 				IF(p.gender=1,'Male','Female')as gender,
@@ -2742,7 +2504,6 @@ class report_management extends MY_Controller {
 				LEFT JOIN supporter s ON s.id=p.supported_by
 				LEFT JOIN regimen r ON r.id=p.current_regimen
 				LEFT JOIN regimen_service_type t ON t.id=p.service
-				LEFT JOIN patient_source pss on pss.id=p.source
 				LEFT JOIN patient_status ps ON ps.id=p.current_status
 				WHERE pv.dispensing_date 
 				BETWEEN '$from' 
@@ -2767,7 +2528,6 @@ class report_management extends MY_Controller {
 				<th> Visit Date</th>
 				<th> Current Weight (Kg) </th>
 				<th> Average Adherence </th>
-				<th> Source </th>
 			</tr>
 			</thead>
 			<tbody>";
@@ -2782,9 +2542,8 @@ class report_management extends MY_Controller {
 				$dispensing_date = date('d-M-Y', strtotime($result['dispensing_date']));
 				$regimen_desc = "<b>" . $result['regimen_code'] . "</b>|" . $result['regimen_desc'];
 				$weight = $result['weight'];
-				$source = $result['source'];
 				$avg_adherence = number_format($result['avg_adherence'], 2);
-				$row_string .= "<tr><td>$patient_no</td><td>$service_type</td><td>$supported_by</td><td>$patient_name</td><td>$age</td><td>$gender</td><td>$regimen_desc</td><td>$dispensing_date</td><td>$weight</td><td>$avg_adherence</td><td>$source</td></tr>";
+				$row_string .= "<tr><td>$patient_no</td><td>$service_type</td><td>$supported_by</td><td>$patient_name</td><td>$age</td><td>$gender</td><td>$regimen_desc</td><td>$dispensing_date</td><td>$weight</td><td>$avg_adherence</td></tr>";
 				$overall_total++;
 			}
 
